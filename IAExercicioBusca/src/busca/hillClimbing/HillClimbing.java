@@ -10,7 +10,7 @@ public class HillClimbing {
 		
 		melhor = hillClimbing(problemas.get(0));
 		for(int i = 1; i < problemas.size(); i++){
-			aux = problemas.get(i);
+			aux = hillClimbing(problemas.get(i));
 			if(aux != null){
 				if(aux.melhor(melhor)){
 					melhor = aux;
@@ -43,7 +43,7 @@ public class HillClimbing {
 			}
 			
 		}else{
-			System.out.println("inicio invalido");
+			System.out.println("estado invalido");
 			atual = null;
 		}
 		

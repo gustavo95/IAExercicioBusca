@@ -27,9 +27,9 @@ public class ProblemaCaixeiro implements ProblemaHC {
 	@Override
 	public List<ProblemaHC> sucessores() {
 		List<ProblemaHC> sucessores = new ArrayList<ProblemaHC>();
+		ProblemaHC sucessor;
 		ArrayList<Integer> cidadesAUX;
 		int aux;
-		ProblemaHC sucessor;
 		
 		for(int i = 1; i < cidades.size()-2; i++){
 			cidadesAUX = (ArrayList<Integer>) cidades.clone();
