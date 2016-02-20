@@ -1,4 +1,4 @@
-package busca;
+package busca.largura;
 
 import java.util.List;
 

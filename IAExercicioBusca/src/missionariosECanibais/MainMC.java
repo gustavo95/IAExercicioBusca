@@ -1,6 +1,6 @@
 package missionariosECanibais;
 
-import busca.Arvore;
+import busca.largura.Arvore;
 
 public class MainMC {
 

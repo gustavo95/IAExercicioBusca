@@ -3,7 +3,7 @@ package missionariosECanibais;
 import java.util.ArrayList;
 import java.util.List;
 
-import busca.No;
+import busca.largura.No;
 
 public class EstadoMC extends No {
 	
