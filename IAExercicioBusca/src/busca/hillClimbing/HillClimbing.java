@@ -24,10 +24,11 @@ public class HillClimbing {
 	public ProblemaHC hillClimbing(ProblemaHC problema){
 		ProblemaHC atual = problema;
 		List<ProblemaHC> sucessores;
-		boolean mudou = false;
+		boolean mudou = true;
 		
 		if(problema.verificar()){
-			while(true){
+			while(mudou){
+				mudou = false;
 				sucessores = atual.sucessores();
 				
 				for(ProblemaHC sucessor : sucessores){
@@ -36,10 +37,6 @@ public class HillClimbing {
 						mudou = true;
 					}
 				}
-				if(mudou != true){
-					break;
-				}
-				mudou = false;
 			}
 			
 		}else{
